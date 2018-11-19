@@ -1,0 +1,24 @@
+﻿<Window x:Name="Blackjack_Game" x:Class="Blackjack01.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack01"
+        mc:Ignorable="d"
+        Title="Blackjack_Game" Height="450" Width="800">
+    <Grid x:Name="grd_Game">
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Game-Background.jpg"/>
+        </Grid.Background>
+        <Frame x:Name="fr_CPU" Content="Frame" HorizontalAlignment="Left" Height="140" Margin="33,35,0,0" VerticalAlignment="Top" Width="551" BorderBrush="#FF2F0505"/>
+        <Frame x:Name="fr_Player" Content="Frame" HorizontalAlignment="Left" Height="150" Margin="33,260,0,0" VerticalAlignment="Top" Width="551" BorderBrush="#FF2F0505"/>
+        <Button x:Name="btn_Hit" Content="Hit" HorizontalAlignment="Left" Height="30" Margin="180,202,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.525,1.069" Background="White" FontWeight="Bold" FontSize="14" Click="btn_Hit_Click"/>
+        <Button x:Name="btn_Stay" Content="Stay" HorizontalAlignment="Left" Height="30" Margin="338,202,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.525,1.069" Background="White" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btn_Split" Content="Split" HorizontalAlignment="Left" Margin="658,202,0,0" VerticalAlignment="Top" Width="75" Height="30" FontWeight="Bold" FontSize="14" Background="White"/>
+        <Button Content="Double Down" HorizontalAlignment="Left" Margin="643,251,0,0" VerticalAlignment="Top" Width="102" Height="34" Background="White" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lbl_Money" Content="$" HorizontalAlignment="Left" Margin="658,384,0,0" VerticalAlignment="Top" Width="73" Foreground="#FFFDF8F8" AutomationProperties.HelpText="Bet money here!"/>
+        <Button x:Name="btn_Add" Content="+" HorizontalAlignment="Left" Margin="745,384,0,0" VerticalAlignment="Top" Width="26" Height="26" Background="Black" Foreground="White" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="btn_Subtract" Content="-" HorizontalAlignment="Left" Margin="627,384,0,0" VerticalAlignment="Top" Width="26" Height="26" Background="Black" Foreground="White" FontWeight="Bold" FontSize="18"/>
+
+    </Grid>
+</Window>
